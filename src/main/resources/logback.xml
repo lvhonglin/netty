@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <!-- 工程名/项目名 -->
+    <contextName>project_name</contextName>
+    <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
+    <logger name="com.kunpeng" level="INFO"/>
+    <!-- 开发阶段使用DEBUG  生产环境使用INFO -->
+    　<root level="INFO">
+    <!--<root level="INFO">-->
+    <appender-ref ref="SDTOUT" />
+    　  <appender-ref ref="INFO_FILE" />
+    <appender-ref ref="ERROR_FILE" />
+    　</root>
+</configuration>
